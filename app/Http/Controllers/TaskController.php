@@ -14,7 +14,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        $tasks = Task::all();
+        $tasks = Task::all(); //Get all of the models from the database.
         return view('pages.tasks.index', compact('tasks', $tasks));
     }
 
